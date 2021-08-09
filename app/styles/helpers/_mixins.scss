@@ -24,12 +24,12 @@
 }
 
 @mixin maxWidth($breakpoint) {
-  @media screen and (max-width: $breakpoint) {
+  @media screen and (max-width: $breakpoint + px) {
     @content;
   }
 }
 @mixin minWidth($breakpoint) {
-  @media screen and (min-width: $breakpoint) {
+  @media screen and (min-width: $breakpoint + px) {
     @content;
   }
 }
