@@ -1,14 +1,14 @@
-@mixin absoluteCenter($direction: "left", $positon: absolute) {
+@mixin absoluteCenter($direction: 'left', $positon: absolute) {
   position: $positon;
-  @if $direction == "left" {
+  @if $direction == 'left' {
     left: 50%;
     transform: translateX(-50%);
   }
-  @if $direction == "top" {
+  @if $direction == 'top' {
     top: 50%;
     transform: translateY(-50%);
   }
-  @if $direction == "both" {
+  @if $direction == 'both' {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -24,12 +24,12 @@
 }
 
 @mixin maxWidth($breakpoint) {
-  @media screen and (max-width: $breakpoint + px) {
+  @media screen and (max-width: $breakpoint + 'px') {
     @content;
   }
 }
 @mixin minWidth($breakpoint) {
-  @media screen and (min-width: $breakpoint + px) {
+  @media screen and (min-width: $breakpoint + 'px') {
     @content;
   }
 }
@@ -72,7 +72,6 @@
     background-color: $bgthump;
   }
 }
-
 
 @mixin touchSlider($width: 80%, $gap: 2.5rem) {
   display: grid !important;
