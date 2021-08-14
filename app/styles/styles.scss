@@ -1,13 +1,15 @@
-@import "helpers/variables";
-@import "helpers/mixins";
-@import "helpers/functions";
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/functions';
 
-@import "base/typography";
-@import "helpers/global";
-@import "helpers/ultilities";
-
-@import "layout/header";
-@import "layout/structure";
-@import "layout/footer";
-
-@import "components/button";
+@import 'base/typography';
+@import 'helpers/global';
+@import 'helpers/ultilities';
+// layout
+@import 'layout/header';
+@import 'layout/structure';
+@import 'layout/footer';
+// page
+@import 'pages/index.scss';
+// component
+@import 'components/button';
