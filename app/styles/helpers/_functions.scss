@@ -1,3 +1,7 @@
 @function extend($obj, $ext-obj) {
   @return map-merge($obj, $ext-obj);
 }
+
+@function calcLineH($lh, $fz) {
+  @return $size / $height;
+}
